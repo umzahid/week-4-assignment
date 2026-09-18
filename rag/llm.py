@@ -9,7 +9,9 @@ class OllamaError(Exception):
 
 def generate(prompt: str, system: str = "") -> str:
     try:
-        response = ollama.generate(model=MODEL, prompt=prompt, system=system)
+        response = ollama.generate(
+            model=MODEL, prompt=prompt, system=system, options={"temperature": 0}
+        )
     except Exception as exc:
         raise OllamaError(
             f"Could not reach Ollama or model '{MODEL}' isn't available. "
