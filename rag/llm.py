@@ -1,6 +1,6 @@
 import ollama
 
-MODEL = "llama3.2:1b"
+MODEL = "llama3.2:3b"
 
 
 class OllamaError(Exception):
