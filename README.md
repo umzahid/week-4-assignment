@@ -1,4 +1,4 @@
-# Week 4 RAG Assignment
+# RagSync
 
 A fully local RAG application: point it at a folder of `.pdf`/`.docx`
 files, and it automatically keeps its vector index in sync as files are
